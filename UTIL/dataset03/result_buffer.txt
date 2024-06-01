@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dataset03
+Instances:    299
+Attributes:   13
+              age
+              anaemia
+              creatinine_phosphokinase
+              diabetes
+              ejection_fraction
+              high_blood_pressure
+              platelets
+              serum_creatinine
+              serum_sodium
+              sex
+              smoking
+              time
+              DEATH_EVENT
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+time <= 73: YES (76.0/13.0)
+time > 73
+|   serum_creatinine = HIGH
+|   |   time <= 241
+|   |   |   platelets = NORMAL
+|   |   |   |   serum_sodium = LOW
+|   |   |   |   |   anaemia = NO
+|   |   |   |   |   |   time <= 162: YES (4.0)
+|   |   |   |   |   |   time > 162
+|   |   |   |   |   |   |   diabetes = NO
+|   |   |   |   |   |   |   |   sex = M: YES (2.0)
+|   |   |   |   |   |   |   |   sex = F: NO (2.0)
+|   |   |   |   |   |   |   diabetes = YES: NO (6.0)
+|   |   |   |   |   anaemia = YES: YES (7.0/3.0)
+|   |   |   |   serum_sodium = NORMAL
+|   |   |   |   |   age <= 70: NO (26.0/5.0)
+|   |   |   |   |   age > 70: YES (4.0)
+|   |   |   |   serum_sodium = HIGH: NO (0.0)
+|   |   |   platelets = LOW: YES (3.0)
+|   |   |   platelets = HIGH: NO (4.0/1.0)
+|   |   time > 241: NO (13.0)
+|   serum_creatinine = NORMAL: NO (137.0/10.0)
+|   serum_creatinine = LOW: NO (15.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	24
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          68               75.5556 %
+Incorrectly Classified Instances        22               24.4444 %
+Kappa statistic                          0.474 
+Mean absolute error                      0.2837
+Root mean squared error                  0.4515
+Relative absolute error                 62.9321 %
+Root relative squared error             91.9087 %
+Total Number of Instances               90     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.647    0.179    0.688      0.647    0.667      0.475    0.742     0.674     YES
+                 0.821    0.353    0.793      0.821    0.807      0.475    0.742     0.764     NO
+Weighted Avg.    0.756    0.287    0.753      0.756    0.754      0.475    0.742     0.730     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 22 12 |  a = YES
+ 10 46 |  b = NO
+

@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dataset02
+Instances:    299
+Attributes:   13
+              age
+              anaemia
+              creatinine_phosphokinase
+              diabetes
+              ejection_fraction
+              high_blood_pressure
+              platelets
+              serum_creatinine
+              serum_sodium
+              sex
+              smoking
+              time
+              DEATH_EVENT
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+time <= 73
+|   serum_sodium <= 136
+|   |   ejection_fraction <= 45: YES (32.0)
+|   |   ejection_fraction > 45
+|   |   |   anaemia = NO: NO (2.0)
+|   |   |   anaemia = YES: YES (5.0)
+|   serum_sodium > 136
+|   |   serum_sodium <= 139
+|   |   |   high_blood_pressure = YES
+|   |   |   |   creatinine_phosphokinase <= 84: NO (2.0)
+|   |   |   |   creatinine_phosphokinase > 84: YES (7.0)
+|   |   |   high_blood_pressure = NO
+|   |   |   |   time <= 20: YES (4.0)
+|   |   |   |   time > 20: NO (9.0/1.0)
+|   |   serum_sodium > 139: YES (15.0/1.0)
+time > 73
+|   serum_creatinine <= 1.4: NO (178.0/13.0)
+|   serum_creatinine > 1.4
+|   |   ejection_fraction <= 20: YES (5.0)
+|   |   ejection_fraction > 20
+|   |   |   time <= 210
+|   |   |   |   creatinine_phosphokinase <= 72: NO (6.0)
+|   |   |   |   creatinine_phosphokinase > 72
+|   |   |   |   |   sex = M
+|   |   |   |   |   |   diabetes = NO
+|   |   |   |   |   |   |   creatinine_phosphokinase <= 607: YES (5.0)
+|   |   |   |   |   |   |   creatinine_phosphokinase > 607: NO (3.0/1.0)
+|   |   |   |   |   |   diabetes = YES: NO (8.0/1.0)
+|   |   |   |   |   sex = F: YES (9.0/1.0)
+|   |   |   time > 210: NO (9.0)
+
+Number of Leaves  : 	16
+
+Size of the tree : 	31
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               83.3333 %
+Incorrectly Classified Instances        15               16.6667 %
+Kappa statistic                          0.6305
+Mean absolute error                      0.211 
+Root mean squared error                  0.3867
+Relative absolute error                 46.8137 %
+Root relative squared error             78.7148 %
+Total Number of Instances               90     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.676    0.071    0.852      0.676    0.754      0.640    0.809     0.713     YES
+                 0.929    0.324    0.825      0.929    0.874      0.640    0.809     0.816     NO
+Weighted Avg.    0.833    0.228    0.835      0.833    0.829      0.640    0.809     0.777     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 23 11 |  a = YES
+  4 52 |  b = NO
+
