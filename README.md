@@ -39,7 +39,7 @@ Na pasta [DOC](https://github.com/gismarb/heart_attack_data_miner/tree/main/DOC)
 
 ### Video
 
-Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](https://github.com/gismarb/heart_attack_data_miner/tree/main/VIDEO).
+Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](https://github.com/gismarb/heart_attack_data_miner/tree/main/VIDEO), ou direto para o canal do [Youtube](https://www.youtube.com/watch?v=ihjK3vraXPI).
 
 
 
