@@ -15,31 +15,31 @@ Este repositório destina-se como acervo para os artefatos do Projeto de Minera�
 
 ### Dataset
 
-Para esse trabalho, utilizamos um dataset original e, derivando desse primeiro, geramos outros 2 datasets. Esses dataset podem ser encontrados na pasta [DATASET](../DATASET). Nessa pasta, é possível encontrar os 3 dataset nos formatos: SQL, CSV e ARFF.
+Para esse trabalho, utilizamos um dataset original e, derivando desse primeiro, geramos outros 2 datasets. Esses dataset podem ser encontrados na pasta [DATASET](https://github.com/gismarb/heart_attack_data_miner/tree/main/DATASET). Nessa pasta, é possível encontrar os 3 dataset nos formatos: SQL, CSV e ARFF.
 
 
 
 ### Imagens
 
-O processamento  e classificação dos dados, geram artefatos de imagem, que podem ser encontrados na pasta [IMG](../IMG). Nesse pontos temos os gráficos de correlação, assim como as árvores de decisão. 
+O processamento  e classificação dos dados, geram artefatos de imagem, que podem ser encontrados na pasta [IMG](https://github.com/gismarb/heart_attack_data_miner/tree/main/IMG). Nesse pontos temos os gráficos de correlação, assim como as árvores de decisão. 
 
 
 
 ### Scripts
 
-Para realização dos tratamentos de dados, utilizamos uma estrutura de script SQL, que podem ser encontrados na pasta [SCRIPT](../SCRIPT). Nessa estrutura, são aplicados, de maneira colunar, os tratamentos de discretização e regrade indicadores de exames para as variáveis contínuas e binárias.
+Para realização dos tratamentos de dados, utilizamos uma estrutura de script SQL, que podem ser encontrados na pasta [SCRIPT](https://github.com/gismarb/heart_attack_data_miner/tree/main/SCRIPT). Nessa estrutura, são aplicados, de maneira colunar, os tratamentos de discretização e regrade indicadores de exames para as variáveis contínuas e binárias.
 
 
 
 ### Documentos
 
-Na pasta [DOC](../DOC), podem ser encontrados os artefatos de documentos dos mais diversos formatos (docx; pdf; ppt; xlsx). Inclusive, o relatório final do projeto está disponível nesta pasta (e documentos auxiliáres também, como a apresentação utilizada para formentar o vídeo final).
+Na pasta [DOC](https://github.com/gismarb/heart_attack_data_miner/tree/main/DOC), podem ser encontrados os artefatos de documentos dos mais diversos formatos (docx; pdf; ppt; xlsx). Inclusive, o relatório final do projeto está disponível nesta pasta (e documentos auxiliáres também, como a apresentação utilizada para formentar o vídeo final).
 
 
 
 ### Video
 
-Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](../VIDEO).
+Como produto final deste projeto, temos o vídeo de apresentação, nas pasta [VIDEO](https://github.com/gismarb/heart_attack_data_miner/tree/main/VIDEO).
 
 
 
