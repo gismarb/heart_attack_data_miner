@@ -1,3 +1,5 @@
+-- FERRAMENTA PARA MANIPULAÇÃO DOS DADOS: MySQL 8.0
+
 -- PARTE 01: CARREGANDO DADOS NO FORMATO ORIGINAL (TRANSFORMANDO CSV EM UMA TABELA)
 -- Criacao do BD para carga dos dados iniciais (orginais e com tratamentos)
 create database ha;
